@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RetinaCellTwin</title>
+  <meta name="description" content="Open NASA OSDR-grounded multimodal analysis of spaceflight-associated retinal responses.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2306111d'/%3E%3Cpath d='M8 32s9-15 24-15 24 15 24 15-9 15-24 15S8 32 8 32Z' fill='none' stroke='%2365d9ff' stroke-width='4'/%3E%3Ccircle cx='32' cy='32' r='9' fill='%23b4a1ff'/%3E%3Ccircle cx='35' cy='29' r='3' fill='%23ecf7ff'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <p class="eyebrow">NASA OSDR · RR-9 · Open research prototype</p>
+    <h1>RetinaCellTwin</h1>
+    <p class="lede">A reproducible, multimodal evidence map of spaceflight-associated retinal responses in mice.</p>
+    <div class="warning">Probabilistic research twin — not a clinical tool, causal model, or validated individual-level digital twin.</div>
+  </header>
+
+  <main>
+    <section>
+      <h2>Evidence layers</h2>
+      <div class="grid">
+        <article><span class="tag observed">Observed</span><h3>Open NASA data</h3><p>RR-9 RNA-seq and imaging plus OSD-758 artificial gravity and OSD-203 ground analogs.</p></article>
+        <article><span class="tag derived">Derived</span><h3>Reproducible statistics</h3><p>Versioned summaries, effect estimates, multiple-testing correction and checksums.</p></article>
+        <article><span class="tag future">Future</span><h3>Model hypotheses</h3><p>Synthetic-data and mechanistic modules will be added only with explicit labels and validation.</p></article>
+      </div>
+    </section>
+
+    <section id="status">
+      <h2>Current analysis</h2>
+      <p id="loading">Loading versioned results…</p>
+      <div id="metrics" class="metrics" hidden></div>
+    </section>
+
+    <section id="cross-mission" class="audit-shell">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Independent cross-mission audit</p>
+          <h2>The universal gravity signature was not supported</h2>
+        </div>
+        <span class="tag derived">Completed test</span>
+      </div>
+      <p class="section-copy">The 362 OSD-255 genes selected at NASA FDR &lt; 0.05 were frozen before OSD-758 and OSD-203 were examined. The audit tests transferability; it does not relabel a failed hypothesis as a positive discovery.</p>
+      <div id="audit-metrics" class="metrics">
+        <article><strong>Loading…</strong><span>cross-mission results</span></article>
+      </div>
+      <div class="hypothesis-panel audit-finding">
+        <p class="eyebrow">Supported prospective hypothesis</p>
+        <p id="radiation-finding">Loading the radiation-attribution test…</p>
+        <p class="hypothesis-limit">This is a time-specific cross-dataset concordance, not proof that radiation caused the spaceflight response. The signal was not stable at one or four months.</p>
+      </div>
+    </section>
+
+    <section id="solver" class="solver-shell">
+      <div class="solver-header">
+        <div>
+          <p class="eyebrow">Transparent evidence solver</p>
+          <h2>Mouse retina flight-control comparison</h2>
+        </div>
+        <span class="tag derived">Derived, not predicted</span>
+      </div>
+      <p class="solver-intro">Choose an observed imaging endpoint. The solver reports effect direction, standardized effect size, uncertainty and an approximate probability of direction. It never substitutes demonstration values.</p>
+      <label class="solver-control" for="endpoint-select">
+        Evidence target
+        <select id="endpoint-select" disabled>
+          <option>Run the analysis to load endpoints</option>
+        </select>
+      </label>
+      <div id="solver-output" class="solver-output" aria-live="polite">
+        <p>Waiting for the versioned analysis results.</p>
+      </div>
+      <details class="solver-method">
+        <summary>How the solver classifies evidence</summary>
+        <ul>
+          <li><strong>Concordant:</strong> Welch FDR and Mann–Whitney FDR are both below 0.05.</li>
+          <li><strong>Model-sensitive:</strong> only one corrected test is below 0.05.</li>
+          <li><strong>Not supported at FDR 0.05:</strong> neither corrected test crosses the threshold.</li>
+          <li><strong>Probability of direction:</strong> an approximate reference-posterior calculation from Hedges' g and its sampling variance, using a flat prior and Normal approximation. It is not the probability of retinal disease or causality.</li>
+        </ul>
+      </details>
+    </section>
+
+    <section class="twin-model">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Probabilistic digital twin</p>
+          <h2>Data → uncertainty → decision</h2>
+        </div>
+        <span class="tag future">Hypothesis-generating</span>
+      </div>
+      <p class="section-copy">As in PlantCellTwin, the model keeps three layers visible. NASA measurements define the observed state; statistical models quantify uncertainty; user-controlled scenarios test what additional experiment would be most informative.</p>
+      <div class="twin-pipeline" aria-label="Digital twin evidence pipeline">
+        <article><span class="tag observed">Observed</span><h3>Retinal state</h3><p>Flight and ground measurements from versioned OSDR datasets.</p></article>
+        <article><span class="tag derived">Inferred</span><h3>Probability state</h3><p>Effect direction, Hedges' g, uncertainty interval and probability of direction.</p></article>
+        <article><span class="tag future">Scenario</span><h3>Research action</h3><p>Robust VOI over p<sub>L</sub>…p<sub>U</sub> and budget-constrained study selection.</p></article>
+      </div>
+      <div class="formula-panel">
+        <p><strong>Reference-posterior approximation</strong></p>
+        <p>V(g) ≈ (n<sub>F</sub> + n<sub>G</sub>)/(n<sub>F</sub>n<sub>G</sub>) + g²/[2(n<sub>F</sub> + n<sub>G</sub> − 2)]</p>
+        <p>Pr(direction | data) ≈ Φ(|g|/√V(g)). The 95% interval is g ± 1.96√V(g).</p>
+      </div>
+    </section>
+
+    <section id="decision-lab" class="decision-lab">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Decision science layer</p>
+          <h2>VOI + integer programming</h2>
+        </div>
+        <span class="hypothesis-badge">User-supplied scenario inputs</span>
+      </div>
+      <p class="section-copy">This layer follows the same decision-analysis logic used in the Rocha project. Scenario probabilities and utilities are never presented as NASA observations.</p>
+      <div class="decision-grid">
+        <form id="voi-form" class="decision-card">
+          <h3>Value of information</h3>
+          <p>Estimate whether a binary validation study is worth performing across an uncertain prior interval.</p>
+          <div class="field-grid">
+            <label>Lower prior p<sub>L</sub><input name="p_low" type="number" min="0" max="1" step="0.01" placeholder="0–1" required></label>
+            <label>Upper prior p<sub>U</sub><input name="p_high" type="number" min="0" max="1" step="0.01" placeholder="0–1" required></label>
+            <label>Benefit if true<input name="benefit" type="number" min="0" step="0.01" placeholder="Utility units" required></label>
+            <label>Loss if false<input name="loss" type="number" min="0" step="0.01" placeholder="Utility units" required></label>
+            <label>Study sensitivity<input name="sensitivity" type="number" min="0" max="1" step="0.01" placeholder="0–1" required></label>
+            <label>Study specificity<input name="specificity" type="number" min="0" max="1" step="0.01" placeholder="0–1" required></label>
+            <label>Study cost<input name="study_cost" type="number" min="0" step="0.01" placeholder="Same utility units" required></label>
+          </div>
+          <button type="submit">Calculate robust VOI</button>
+          <div id="voi-output" class="decision-output" aria-live="polite">Enter a scenario to calculate the EVSI interval over p<sub>L</sub>…p<sub>U</sub>.</div>
+        </form>
+
+        <form id="pl-form" class="decision-card">
+          <h3>Budget allocation</h3>
+          <p>Select the combination of analyses with maximum declared information value under a fixed budget.</p>
+          <label class="budget-field">Available budget<input name="budget" type="number" min="0" step="0.01" placeholder="Budget units" required></label>
+          <div class="study-table" role="group" aria-label="Candidate analyses">
+            <div class="study-row header"><span>Analysis</span><span>Cost</span><span>Value</span></div>
+            <div class="study-row"><span>OSD-758 artificial gravity</span><input aria-label="OSD-758 cost" name="cost_0" type="number" min="0" step="0.01" required><input aria-label="OSD-758 value" name="value_0" type="number" min="0" step="0.01" required></div>
+            <div class="study-row"><span>OSD-715 proteomics</span><input aria-label="OSD-715 cost" name="cost_1" type="number" min="0" step="0.01" required><input aria-label="OSD-715 value" name="value_1" type="number" min="0" step="0.01" required></div>
+            <div class="study-row"><span>Cross-mission meta-analysis</span><input aria-label="Meta-analysis cost" name="cost_2" type="number" min="0" step="0.01" required><input aria-label="Meta-analysis value" name="value_2" type="number" min="0" step="0.01" required></div>
+            <div class="study-row"><span>Retinal cell-type mapping</span><input aria-label="Cell-type mapping cost" name="cost_3" type="number" min="0" step="0.01" required><input aria-label="Cell-type mapping value" name="value_3" type="number" min="0" step="0.01" required></div>
+          </div>
+          <button type="submit">Optimize research plan</button>
+          <div id="pl-output" class="decision-output" aria-live="polite">Enter comparable cost and value units for every candidate analysis.</div>
+        </form>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Discovery design</p>
+          <h2>Reference → reproduction → discovery</h2>
+        </div>
+        <span class="tag derived">Audit completed</span>
+      </div>
+      <div class="flow-grid">
+        <article class="flow-card">
+          <span class="step-number">01</span>
+          <h3>Kaggle baseline</h3>
+          <p>Use public retina notebooks as methodological references for preprocessing, segmentation and evaluation. Their outputs are controls, not NASA evidence.</p>
+          <div class="reference-links">
+            <a href="https://www.kaggle.com/datasets/paultimothymooney/kermany2018">OCT notebooks</a>
+            <a href="https://www.kaggle.com/datasets/andrewmvd/retinal-disease-classification">RFMiD notebooks</a>
+            <a href="https://www.kaggle.com/datasets/abdallahwagih/retina-blood-vessel">Vessel segmentation</a>
+          </div>
+        </article>
+        <article class="flow-card active-step">
+          <span class="step-number">02</span>
+          <h3>NASA reproduction</h3>
+          <p>Recompute the RR-9 transcriptomic and imaging summaries from open OSDR files, with frozen inputs, checksums and tests.</p>
+          <span class="status-pill">Running in v0.1</span>
+        </article>
+        <article class="flow-card">
+          <span class="step-number">03</span>
+          <h3>Multimission discovery</h3>
+          <p>Test the frozen RR-9 gene set in artificial-gravity and ground-analog datasets, with transcriptome-background and random-panel benchmarks.</p>
+          <span class="status-pill">Completed in v0.2</span>
+        </article>
+      </div>
+      <div class="hypothesis-panel">
+        <p class="eyebrow">Hypothesis decision</p>
+        <p><strong>Not supported as a stable universal program:</strong> the RR-9 transcriptomic signature did not replicate in the independent OSD-758 microgravity-versus-ground contrast, and its attenuation under artificial gravity was not stronger than the transcriptome background.</p>
+        <p class="hypothesis-limit">A narrower, time-specific radiation-compatible component survived the benchmark and is retained for prospective testing. No causal or human-clinical claim is made.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Open datasets</h2>
+      <div class="dataset-list">
+        <a href="https://osdr.nasa.gov/bio/repo/data/studies/OSD-255">OSD-255 <span>Right-retina bulk RNA-seq</span></a>
+        <a href="https://osdr.nasa.gov/bio/repo/data/studies/OSD-557">OSD-557 <span>4-HNE and PNA imaging</span></a>
+        <a href="https://osdr.nasa.gov/bio/repo/data/studies/OSD-568">OSD-568 <span>TUNEL, PECAM and ZO-1 imaging</span></a>
+        <a href="https://osdr.nasa.gov/bio/repo/data/studies/OSD-758">OSD-758 <span>Retina RNA-seq across uG, 0.33G, 0.66G and 1G in flight</span></a>
+        <a href="https://osdr.nasa.gov/bio/repo/data/studies/OSD-203">OSD-203 <span>Retina RNA-seq after radiation and hindlimb unloading</span></a>
+      </div>
+    </section>
+
+    <section>
+      <h2>Next open NASA validation sets</h2>
+      <p class="section-copy">These accessions remain candidates for independent validation beyond the completed OSD-758 and OSD-203 audit.</p>
+      <div class="accession-cloud">
+        <a href="https://osdr.nasa.gov/bio/repo/data/studies/OSD-87">OSD-87 · STS-135</a>
+        <a href="https://osdr.nasa.gov/bio/repo/data/studies/OSD-100">OSD-100 · RR-1</a>
+        <a href="https://osdr.nasa.gov/bio/repo/data/studies/OSD-162">OSD-162 · RR-3 eye</a>
+        <a href="https://osdr.nasa.gov/bio/repo/data/studies/OSD-194">OSD-194 · RR-3 retina</a>
+        <a href="https://osdr.nasa.gov/bio/repo/data/studies/OSD-715">OSD-715 · RR-9 proteomics</a>
+        <a href="https://osdr.nasa.gov/bio/repo/data/studies/OSD-759">OSD-759 · artificial gravity optic nerve</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>Interpretation boundary</h2>
+      <ul id="boundaries">
+        <li>Spaceflight is a combined exposure and does not isolate microgravity.</li>
+        <li>Cross-dataset agreement is hypothesis-generating, not causal proof.</li>
+        <li>Mouse retina evidence does not establish human clinical risk.</li>
+      </ul>
+    </section>
+
+    <section id="references">
+      <h2>Scientific foundation</h2>
+      <p class="section-copy">Primary datasets, statistical methods and the closest prior retinal analysis are linked directly. The probabilistic layer is intentionally approximate and auditable.</p>
+      <ol class="reference-list">
+        <li><a href="https://visualization.osdr.nasa.gov/biodata/api/">NASA OSDR Biological Data API</a> — provenance and open-file access.</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/42399270/">Casaletto et al. (2026)</a> — machine-learning analysis of molecular pathways of retinal damage in spaceflown mice; used as prior work, not duplicated as a new discovery.</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/39596110/">Kremsky et al. (2024)</a> — prior demonstration that artificial gravity attenuates retinal and optic-nerve transcriptomic responses; the present audit tests transfer of an independently selected RR-9 panel.</li>
+        <li><a href="https://doi.org/10.1038/s41598-022-19360-9">Kothiyal et al. (2022)</a> — longitudinal retinal multi-omics after chronic low-dose irradiation and hindlimb unloading; experimental basis for OSD-203 attribution contrasts.</li>
+        <li><a href="https://doi.org/10.3102/10769986006002107">Hedges (1981)</a> — bias-corrected standardized mean-difference theory.</li>
+        <li><a href="https://doi.org/10.1111/j.2517-6161.1995.tb02031.x">Benjamini &amp; Hochberg (1995)</a> — false-discovery-rate control.</li>
+        <li><a href="https://doi.org/10.3389/fpsyg.2019.02767">Makowski et al. (2019)</a> — probability of direction and Bayesian effect-existence indices.</li>
+        <li><a href="https://doi.org/10.1177/0272989X15575225">Strong et al. (2015)</a> — expected value of sample information for research decisions.</li>
+        <li><a href="https://doi.org/10.1016/j.molmed.2020.04.009">Corral-Acero et al. (2020)</a> — digital-twin concepts and limitations in medicine.</li>
+      </ol>
+    </section>
+  </main>
+  <footer>RetinaCellTwin v0.2 · Open-source cross-mission audit</footer>
+  <script src="app.js"></script>
+</body>
+</html>
