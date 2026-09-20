@@ -1,0 +1,147 @@
+{
+  "project": "RetinaCellTwin",
+  "version": "0.1.0-dev",
+  "evidence_layers": {
+    "observed": [
+      "OSD-255",
+      "OSD-557",
+      "OSD-568"
+    ],
+    "derived": [
+      "OSD-255 differential-expression summary",
+      "prespecified imaging endpoint comparisons"
+    ],
+    "hypothetical": []
+  },
+  "transcriptomics": {
+    "accession": "OSD-255",
+    "contrast": "Space Flight vs Ground Control",
+    "orientation": "positive log2FC means higher expression in Space Flight",
+    "genes_with_p_value": 23472,
+    "genes_with_fdr_below_0_05": 362,
+    "up_at_fdr_0_05": 168,
+    "down_at_fdr_0_05": 194,
+    "source_statistics": "NASA OSDR processed differential-expression table"
+  },
+  "imaging": [
+    {
+      "dataset": "OSD-557",
+      "endpoint": "4-HNE-positive cell density, retina",
+      "unit": "cells/mm²",
+      "unmapped_samples_excluded": "CC19",
+      "n_flight": 6,
+      "n_ground": 5,
+      "flight_mean": 25.7105081383,
+      "ground_mean": 18.59951911,
+      "difference_flight_minus_ground": 7.1109890283,
+      "hedges_g": 0.9710254921,
+      "welch_p": 0.1015066507,
+      "mann_whitney_p": 0.1774891775,
+      "welch_fdr": 0.1184244258,
+      "mann_whitney_fdr": 0.2070707071
+    },
+    {
+      "dataset": "OSD-557",
+      "endpoint": "4-HNE mean intensity, photoreceptor layer",
+      "unit": "arbitrary intensity",
+      "unmapped_samples_excluded": "",
+      "n_flight": 5,
+      "n_ground": 5,
+      "flight_mean": 40.253533332,
+      "ground_mean": 32.6738,
+      "difference_flight_minus_ground": 7.579733332,
+      "hedges_g": 1.3332908731,
+      "welch_p": 0.0479303526,
+      "mann_whitney_p": 0.0555555556,
+      "welch_fdr": 0.0671024936,
+      "mann_whitney_fdr": 0.0909090909
+    },
+    {
+      "dataset": "OSD-557",
+      "endpoint": "PNA-positive cell density",
+      "unit": "cells/mm²",
+      "unmapped_samples_excluded": "",
+      "n_flight": 5,
+      "n_ground": 6,
+      "flight_mean": 923.21066814,
+      "ground_mean": 1249.73847,
+      "difference_flight_minus_ground": -326.52780186,
+      "hedges_g": -1.9083969988,
+      "welch_p": 0.006904875,
+      "mann_whitney_p": 0.0173160173,
+      "welch_fdr": 0.0241670625,
+      "mann_whitney_fdr": 0.0606060606
+    },
+    {
+      "dataset": "OSD-568",
+      "endpoint": "TUNEL density, total",
+      "unit": "reported density",
+      "unmapped_samples_excluded": "VG15;VG16;VG17;VG18;VG20",
+      "n_flight": 6,
+      "n_ground": 6,
+      "flight_mean": 151.8819677667,
+      "ground_mean": 78.81940201,
+      "difference_flight_minus_ground": 73.0625657567,
+      "hedges_g": 3.4972402478,
+      "welch_p": 0.0001157247,
+      "mann_whitney_p": 0.0021645022,
+      "welch_fdr": 0.0008100732,
+      "mann_whitney_fdr": 0.0151515152
+    },
+    {
+      "dataset": "OSD-568",
+      "endpoint": "TUNEL density, endothelial cells",
+      "unit": "reported density",
+      "unmapped_samples_excluded": "VG15;VG16;VG17;VG18;VG20",
+      "n_flight": 6,
+      "n_ground": 6,
+      "flight_mean": 50.2078225317,
+      "ground_mean": 31.720310505,
+      "difference_flight_minus_ground": 18.4875120267,
+      "hedges_g": 1.2757686901,
+      "welch_p": 0.0423109449,
+      "mann_whitney_p": 0.0649350649,
+      "welch_fdr": 0.0671024936,
+      "mann_whitney_fdr": 0.0909090909
+    },
+    {
+      "dataset": "OSD-568",
+      "endpoint": "PECAM mean signal",
+      "unit": "reported intensity",
+      "unmapped_samples_excluded": "",
+      "n_flight": 6,
+      "n_ground": 5,
+      "flight_mean": 49.3634333333,
+      "ground_mean": 35.2802,
+      "difference_flight_minus_ground": 14.0832333333,
+      "hedges_g": 1.5002000416,
+      "welch_p": 0.0214571613,
+      "mann_whitney_p": 0.0303030303,
+      "welch_fdr": 0.0500667096,
+      "mann_whitney_fdr": 0.0707070707
+    },
+    {
+      "dataset": "OSD-568",
+      "endpoint": "ZO-1 mean signal",
+      "unit": "reported intensity",
+      "unmapped_samples_excluded": "",
+      "n_flight": 6,
+      "n_ground": 6,
+      "flight_mean": 30.4383,
+      "ground_mean": 38.0383,
+      "difference_flight_minus_ground": -7.6,
+      "hedges_g": -0.8855305686,
+      "welch_p": 0.1275980875,
+      "mann_whitney_p": 0.2281328677,
+      "welch_fdr": 0.1275980875,
+      "mann_whitney_fdr": 0.2281328677
+    }
+  ],
+  "claim_boundaries": [
+    "Spaceflight is a combined exposure and does not isolate microgravity.",
+    "Right-retina transcriptomics and left-eye imaging are not treated as paired measurements.",
+    "Imaging tests are exploratory and corrected across seven prespecified endpoints.",
+    "Cross-modal concordance does not establish causality.",
+    "This release does not generate synthetic data or make clinical predictions."
+  ]
+}
