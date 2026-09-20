@@ -82,7 +82,7 @@ Kremsky et al. previously established dose-dependent artificial-gravity attenuat
 - Cross-modal agreement does not establish mechanism or causality.
 - Hindlimb unloading and low-dose gamma irradiation are imperfect analogs of the spaceflight environment.
 - The seven-day radiation concordance is a dataset-level, time-specific hypothesis and not proof that radiation caused the flight response.
-- No synthetic data are generated in v0.1.
+- No synthetic data are generated in v0.2.
 - No clinical inference about human retinal disease is supported.
 
 ## Methodological references
