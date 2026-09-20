@@ -1,0 +1,44 @@
+{
+  "api_base": "https://visualization.osdr.nasa.gov/biodata/api/v2",
+  "datasets": {
+    "OSD-255": {
+      "role": "transcriptomic discovery",
+      "files": [
+        "GLDS-255_rna_seq_differential_expression_GLbulkRNAseq.csv",
+        "GLDS-255_rna_seq_SampleTable_GLbulkRNAseq.csv"
+      ]
+    },
+    "OSD-557": {
+      "role": "oxidative stress and photoreceptor context",
+      "files": [
+        "LSDS-1_immunostaining_Overbey_HNE_RetinaLayer_TRANSFORMED.csv",
+        "LSDS-1_immunostaining_Overbey_HNE_PhotoreceptorLayer_TRANSFORMED.csv",
+        "LSDS-1_immunostaining_Overbey_PNA_TRANSFORMED.csv"
+      ]
+    },
+    "OSD-568": {
+      "role": "apoptosis and blood-retinal-barrier context",
+      "files": [
+        "LSDS-5_immunostaining_microscopy_TUNELtr_TRANSFORMED.csv",
+        "LSDS-5_immunostaining_microscopy_PECAMtr_TRANSFORMED.csv",
+        "LSDS-5_immunostaining_microscopy_Zo-1tr_TRANSFORMED.csv"
+      ]
+    },
+    "OSD-758": {
+      "role": "artificial-gravity retinal validation",
+      "files": [
+        "GLDS-664_rna_seq_differential_expression_GLbulkRNAseq.csv",
+        "GLDS-664_rna_seq_contrasts_GLbulkRNAseq.csv",
+        "GLDS-664_rna_seq_SampleTable_GLbulkRNAseq.csv"
+      ]
+    },
+    "OSD-203": {
+      "role": "radiation and hindlimb-unloading retinal attribution",
+      "files": [
+        "GLDS-203_rna_seq_differential_expression_GLbulkRNAseq.csv",
+        "GLDS-203_rna_seq_contrasts_GLbulkRNAseq.csv",
+        "GLDS-203_rna_seq_SampleTable_GLbulkRNAseq.csv"
+      ]
+    }
+  }
+}

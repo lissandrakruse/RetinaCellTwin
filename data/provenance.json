@@ -1,0 +1,215 @@
+{
+  "project": "RetinaCellTwin",
+  "retrieved_at_utc": "2026-09-20T20:48:58.206081+00:00",
+  "manifest": "data/datasets.json",
+  "files": [
+    {
+      "accession": "OSD-255",
+      "kind": "sample metadata",
+      "local_file": "OSD-255_sample_metadata.csv",
+      "source_url": "https://visualization.osdr.nasa.gov/biodata/api/v2/query/metadata/?id.accession=OSD-255&study.factor%20value&format=csv",
+      "bytes": 1802,
+      "sha256": "2f1944217302d787ef060dc502d11a6b9d440ca40017d7ecf9bd6022d8761deb"
+    },
+    {
+      "accession": "OSD-255",
+      "kind": "differential expression table",
+      "category": "GeneLab Processed RNA-Seq Files",
+      "local_file": "GLDS-255_rna_seq_differential_expression_GLbulkRNAseq.csv",
+      "source_url": "https://osdr.nasa.gov/geode-py/ws/studies/OSD-255/download?source=datamanager&file=GLDS-255_rna_seq_differential_expression_GLbulkRNAseq.csv",
+      "api_record": "https://visualization.osdr.nasa.gov/biodata/api/v2/dataset/OSD-255/file/GLDS-255_rna_seq_differential_expression_GLbulkRNAseq.csv/",
+      "restricted": false,
+      "visible": true,
+      "bytes": 20038430,
+      "sha256": "f9a24af3192580e15c1f91e9a4574ad8589ee813ffae24c8315cff5d158342df"
+    },
+    {
+      "accession": "OSD-255",
+      "kind": "sample table",
+      "category": "GeneLab Processed RNA-Seq Files",
+      "local_file": "GLDS-255_rna_seq_SampleTable_GLbulkRNAseq.csv",
+      "source_url": "https://osdr.nasa.gov/geode-py/ws/studies/OSD-255/download?source=datamanager&file=GLDS-255_rna_seq_SampleTable_GLbulkRNAseq.csv",
+      "api_record": "https://visualization.osdr.nasa.gov/biodata/api/v2/dataset/OSD-255/file/GLDS-255_rna_seq_SampleTable_GLbulkRNAseq.csv/",
+      "restricted": false,
+      "visible": true,
+      "bytes": 479,
+      "sha256": "250cc974c84ff68d46f6f71898a4ca0e5c7b989cfd52be10fd702589bc3bb512"
+    },
+    {
+      "accession": "OSD-557",
+      "kind": "sample metadata",
+      "local_file": "OSD-557_sample_metadata.csv",
+      "source_url": "https://visualization.osdr.nasa.gov/biodata/api/v2/query/metadata/?id.accession=OSD-557&study.factor%20value&format=csv",
+      "bytes": 7300,
+      "sha256": "66604cb99710898cfba1d217fefbf50e763b64d6240ff0c25f512f7ed309e56b"
+    },
+    {
+      "accession": "OSD-557",
+      "kind": null,
+      "category": "Immunostaining",
+      "local_file": "LSDS-1_immunostaining_Overbey_HNE_RetinaLayer_TRANSFORMED.csv",
+      "source_url": "https://osdr.nasa.gov/geode-py/ws/studies/OSD-557/download?source=datamanager&file=LSDS-1_immunostaining_Overbey_HNE_RetinaLayer_TRANSFORMED.csv",
+      "api_record": "https://visualization.osdr.nasa.gov/biodata/api/v2/dataset/OSD-557/file/LSDS-1_immunostaining_Overbey_HNE_RetinaLayer_TRANSFORMED.csv/",
+      "restricted": false,
+      "visible": true,
+      "bytes": 15041,
+      "sha256": "7cf736c1c077052a8ef5adbee2854f6befd512db609f8bb0397f142ec79b9208"
+    },
+    {
+      "accession": "OSD-557",
+      "kind": null,
+      "category": "Immunostaining",
+      "local_file": "LSDS-1_immunostaining_Overbey_HNE_PhotoreceptorLayer_TRANSFORMED.csv",
+      "source_url": "https://osdr.nasa.gov/geode-py/ws/studies/OSD-557/download?source=datamanager&file=LSDS-1_immunostaining_Overbey_HNE_PhotoreceptorLayer_TRANSFORMED.csv",
+      "api_record": "https://visualization.osdr.nasa.gov/biodata/api/v2/dataset/OSD-557/file/LSDS-1_immunostaining_Overbey_HNE_PhotoreceptorLayer_TRANSFORMED.csv/",
+      "restricted": false,
+      "visible": true,
+      "bytes": 1601,
+      "sha256": "dbf37932286954719dbb44b64f5bd76c405deb59c55b6a8491c92b2a6064255e"
+    },
+    {
+      "accession": "OSD-557",
+      "kind": null,
+      "category": "Immunostaining",
+      "local_file": "LSDS-1_immunostaining_Overbey_PNA_TRANSFORMED.csv",
+      "source_url": "https://osdr.nasa.gov/geode-py/ws/studies/OSD-557/download?source=datamanager&file=LSDS-1_immunostaining_Overbey_PNA_TRANSFORMED.csv",
+      "api_record": "https://visualization.osdr.nasa.gov/biodata/api/v2/dataset/OSD-557/file/LSDS-1_immunostaining_Overbey_PNA_TRANSFORMED.csv/",
+      "restricted": false,
+      "visible": true,
+      "bytes": 6810,
+      "sha256": "2b43ce45ace17ff6b19a2508ef87a4456a044a9e19aee119b6c1889bbd51924a"
+    },
+    {
+      "accession": "OSD-568",
+      "kind": "sample metadata",
+      "local_file": "OSD-568_sample_metadata.csv",
+      "source_url": "https://visualization.osdr.nasa.gov/biodata/api/v2/query/metadata/?id.accession=OSD-568&study.factor%20value&format=csv",
+      "bytes": 4807,
+      "sha256": "67f3bb5c42fa977ca5dc5baa46bafc4f40f21aeed940f5e26c34c6f2d8e5f2c5"
+    },
+    {
+      "accession": "OSD-568",
+      "kind": null,
+      "category": "Immunostaining",
+      "local_file": "LSDS-5_immunostaining_microscopy_TUNELtr_TRANSFORMED.csv",
+      "source_url": "https://osdr.nasa.gov/geode-py/ws/studies/OSD-568/download?source=datamanager&file=LSDS-5_immunostaining_microscopy_TUNELtr_TRANSFORMED.csv",
+      "api_record": "https://visualization.osdr.nasa.gov/biodata/api/v2/dataset/OSD-568/file/LSDS-5_immunostaining_microscopy_TUNELtr_TRANSFORMED.csv/",
+      "restricted": false,
+      "visible": true,
+      "bytes": 1388,
+      "sha256": "29883e1f817b9d09e1c19714b050c6535d1c211091d755937ae889197c98d270"
+    },
+    {
+      "accession": "OSD-568",
+      "kind": null,
+      "category": "Immunostaining",
+      "local_file": "LSDS-5_immunostaining_microscopy_PECAMtr_TRANSFORMED.csv",
+      "source_url": "https://osdr.nasa.gov/geode-py/ws/studies/OSD-568/download?source=datamanager&file=LSDS-5_immunostaining_microscopy_PECAMtr_TRANSFORMED.csv",
+      "api_record": "https://visualization.osdr.nasa.gov/biodata/api/v2/dataset/OSD-568/file/LSDS-5_immunostaining_microscopy_PECAMtr_TRANSFORMED.csv/",
+      "restricted": false,
+      "visible": true,
+      "bytes": 278,
+      "sha256": "1d2ba6b569aee6742a86af6166a4fddece4a765ffc28df2bc6ee6db3cecd0316"
+    },
+    {
+      "accession": "OSD-568",
+      "kind": null,
+      "category": "Immunostaining",
+      "local_file": "LSDS-5_immunostaining_microscopy_Zo-1tr_TRANSFORMED.csv",
+      "source_url": "https://osdr.nasa.gov/geode-py/ws/studies/OSD-568/download?source=datamanager&file=LSDS-5_immunostaining_microscopy_Zo-1tr_TRANSFORMED.csv",
+      "api_record": "https://visualization.osdr.nasa.gov/biodata/api/v2/dataset/OSD-568/file/LSDS-5_immunostaining_microscopy_Zo-1tr_TRANSFORMED.csv/",
+      "restricted": false,
+      "visible": true,
+      "bytes": 303,
+      "sha256": "60a26739d21f0c8832201780f6f1528a62c6169ed3f0e307d244496f51c9915a"
+    },
+    {
+      "accession": "OSD-758",
+      "kind": "sample metadata",
+      "local_file": "OSD-758_sample_metadata.csv",
+      "source_url": "https://visualization.osdr.nasa.gov/biodata/api/v2/query/metadata/?id.accession=OSD-758&study.factor%20value&format=csv",
+      "bytes": 4836,
+      "sha256": "7cd781ea6c1afeb545551fec6bd8143619f3ba2da1eb37e3f07cc7af736bb1ab"
+    },
+    {
+      "accession": "OSD-758",
+      "kind": "differential expression table",
+      "category": "GeneLab Processed RNA-Seq Files",
+      "local_file": "GLDS-664_rna_seq_differential_expression_GLbulkRNAseq.csv",
+      "source_url": "https://osdr.nasa.gov/geode-py/ws/studies/OSD-758/download?source=datamanager&file=GLDS-664_rna_seq_differential_expression_GLbulkRNAseq.csv",
+      "api_record": "https://visualization.osdr.nasa.gov/biodata/api/v2/dataset/OSD-758/file/GLDS-664_rna_seq_differential_expression_GLbulkRNAseq.csv/",
+      "restricted": false,
+      "visible": true,
+      "bytes": 71249884,
+      "sha256": "f519bffbbc78df491b3bede3582ee8be90de69acdbe056f54a15cddada92f132"
+    },
+    {
+      "accession": "OSD-758",
+      "kind": "differential expression contrasts",
+      "category": "GeneLab Processed RNA-Seq Files",
+      "local_file": "GLDS-664_rna_seq_contrasts_GLbulkRNAseq.csv",
+      "source_url": "https://osdr.nasa.gov/geode-py/ws/studies/OSD-758/download?source=datamanager&file=GLDS-664_rna_seq_contrasts_GLbulkRNAseq.csv",
+      "api_record": "https://visualization.osdr.nasa.gov/biodata/api/v2/dataset/OSD-758/file/GLDS-664_rna_seq_contrasts_GLbulkRNAseq.csv/",
+      "restricted": false,
+      "visible": true,
+      "bytes": 2787,
+      "sha256": "93d924b17e39aacff2c7a926c47a8c2c9c3b83f9e5df31cfea15502e22ca97e1"
+    },
+    {
+      "accession": "OSD-758",
+      "kind": "sample table",
+      "category": "GeneLab Processed RNA-Seq Files",
+      "local_file": "GLDS-664_rna_seq_SampleTable_GLbulkRNAseq.csv",
+      "source_url": "https://osdr.nasa.gov/geode-py/ws/studies/OSD-758/download?source=datamanager&file=GLDS-664_rna_seq_SampleTable_GLbulkRNAseq.csv",
+      "api_record": "https://visualization.osdr.nasa.gov/biodata/api/v2/dataset/OSD-758/file/GLDS-664_rna_seq_SampleTable_GLbulkRNAseq.csv/",
+      "restricted": false,
+      "visible": true,
+      "bytes": 1977,
+      "sha256": "afd3a34683055af2a85862a9d7b889578c41d459314ccf8596f9a52e437bc304"
+    },
+    {
+      "accession": "OSD-203",
+      "kind": "sample metadata",
+      "local_file": "OSD-203_sample_metadata.csv",
+      "source_url": "https://visualization.osdr.nasa.gov/biodata/api/v2/query/metadata/?id.accession=OSD-203&study.factor%20value&format=csv",
+      "bytes": 22119,
+      "sha256": "117cf757f7e2fb9ad8ed81c8b4ed2be86a794b9a7f321ea0a5d7c1cabca6fd03"
+    },
+    {
+      "accession": "OSD-203",
+      "kind": "differential expression table",
+      "category": "GeneLab Processed RNA-Seq Files",
+      "local_file": "GLDS-203_rna_seq_differential_expression_GLbulkRNAseq.csv",
+      "source_url": "https://osdr.nasa.gov/geode-py/ws/studies/OSD-203/download?source=datamanager&file=GLDS-203_rna_seq_differential_expression_GLbulkRNAseq.csv",
+      "api_record": "https://visualization.osdr.nasa.gov/biodata/api/v2/dataset/OSD-203/file/GLDS-203_rna_seq_differential_expression_GLbulkRNAseq.csv/",
+      "restricted": false,
+      "visible": true,
+      "bytes": 298233512,
+      "sha256": "e0a5a573f829afe7d4ddd1189997401af4fba479ecd8c30c842b38acf3e0dec6"
+    },
+    {
+      "accession": "OSD-203",
+      "kind": "differential expression contrasts",
+      "category": "GeneLab Processed RNA-Seq Files",
+      "local_file": "GLDS-203_rna_seq_contrasts_GLbulkRNAseq.csv",
+      "source_url": "https://osdr.nasa.gov/geode-py/ws/studies/OSD-203/download?source=datamanager&file=GLDS-203_rna_seq_contrasts_GLbulkRNAseq.csv",
+      "api_record": "https://visualization.osdr.nasa.gov/biodata/api/v2/dataset/OSD-203/file/GLDS-203_rna_seq_contrasts_GLbulkRNAseq.csv/",
+      "restricted": false,
+      "visible": true,
+      "bytes": 29227,
+      "sha256": "1e4daa0819a5dfc24a37850538bee9b47c095157663c03dff2e6315afd396eae"
+    },
+    {
+      "accession": "OSD-203",
+      "kind": "sample table",
+      "category": "GeneLab Processed RNA-Seq Files",
+      "local_file": "GLDS-203_rna_seq_SampleTable_GLbulkRNAseq.csv",
+      "source_url": "https://osdr.nasa.gov/geode-py/ws/studies/OSD-203/download?source=datamanager&file=GLDS-203_rna_seq_SampleTable_GLbulkRNAseq.csv",
+      "api_record": "https://visualization.osdr.nasa.gov/biodata/api/v2/dataset/OSD-203/file/GLDS-203_rna_seq_SampleTable_GLbulkRNAseq.csv/",
+      "restricted": false,
+      "visible": true,
+      "bytes": 5586,
+      "sha256": "edfd5ae99a5f1502b327184f8f679fd99b5d6ad76f35185f3dd55fb976afd5c0"
+    }
+  ]
+}
