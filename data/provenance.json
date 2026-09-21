@@ -1,6 +1,6 @@
 {
   "project": "RetinaCellTwin",
-  "retrieved_at_utc": "2026-09-20T20:48:58.206081+00:00",
+  "retrieved_at_utc": "2026-09-20T23:53:03.520981+00:00",
   "manifest": "data/datasets.json",
   "files": [
     {
@@ -34,6 +34,30 @@
       "visible": true,
       "bytes": 479,
       "sha256": "250cc974c84ff68d46f6f71898a4ca0e5c7b989cfd52be10fd702589bc3bb512"
+    },
+    {
+      "accession": "OSD-255",
+      "kind": "unnormalized counts - supplementary",
+      "category": "GeneLab Processed RNA-Seq Files",
+      "local_file": "GLDS-255_rna_seq_STAR_Unnormalized_Counts_GLbulkRNAseq.csv",
+      "source_url": "https://osdr.nasa.gov/geode-py/ws/studies/OSD-255/download?source=datamanager&file=GLDS-255_rna_seq_STAR_Unnormalized_Counts_GLbulkRNAseq.csv",
+      "api_record": "https://visualization.osdr.nasa.gov/biodata/api/v2/dataset/OSD-255/file/GLDS-255_rna_seq_STAR_Unnormalized_Counts_GLbulkRNAseq.csv/",
+      "restricted": false,
+      "visible": true,
+      "bytes": 3480492,
+      "sha256": "3fee2bf24a8986d98774abd7dacc3ab0b94f3b8b0a652555bf92e948de3a472a"
+    },
+    {
+      "accession": "OSD-255",
+      "kind": null,
+      "category": "GeneLab Processed RNA-Seq Files",
+      "local_file": "GLDS-255_rna_seq_VST_Counts_GLbulkRNAseq.csv",
+      "source_url": "https://osdr.nasa.gov/geode-py/ws/studies/OSD-255/download?source=datamanager&file=GLDS-255_rna_seq_VST_Counts_GLbulkRNAseq.csv",
+      "api_record": "https://visualization.osdr.nasa.gov/biodata/api/v2/dataset/OSD-255/file/GLDS-255_rna_seq_VST_Counts_GLbulkRNAseq.csv/",
+      "restricted": false,
+      "visible": true,
+      "bytes": 6839290,
+      "sha256": "25b5cb333c7f56b26041dcb911bfef72f402ab93e81bd679cf57a65d8e63938c"
     },
     {
       "accession": "OSD-557",
@@ -168,6 +192,30 @@
       "sha256": "afd3a34683055af2a85862a9d7b889578c41d459314ccf8596f9a52e437bc304"
     },
     {
+      "accession": "OSD-758",
+      "kind": "unnormalized counts - supplementary",
+      "category": "GeneLab Processed RNA-Seq Files",
+      "local_file": "GLDS-664_rna_seq_STAR_Unnormalized_Counts_GLbulkRNAseq.csv",
+      "source_url": "https://osdr.nasa.gov/geode-py/ws/studies/OSD-758/download?source=datamanager&file=GLDS-664_rna_seq_STAR_Unnormalized_Counts_GLbulkRNAseq.csv",
+      "api_record": "https://visualization.osdr.nasa.gov/biodata/api/v2/dataset/OSD-758/file/GLDS-664_rna_seq_STAR_Unnormalized_Counts_GLbulkRNAseq.csv/",
+      "restricted": false,
+      "visible": true,
+      "bytes": 6859678,
+      "sha256": "5d7224db11622269df50a1f0adf9c274a5adb43ffa98d90bf19fa8eee8a00575"
+    },
+    {
+      "accession": "OSD-758",
+      "kind": null,
+      "category": "GeneLab Processed RNA-Seq Files",
+      "local_file": "GLDS-664_rna_seq_VST_Counts_GLbulkRNAseq.csv",
+      "source_url": "https://osdr.nasa.gov/geode-py/ws/studies/OSD-758/download?source=datamanager&file=GLDS-664_rna_seq_VST_Counts_GLbulkRNAseq.csv",
+      "api_record": "https://visualization.osdr.nasa.gov/biodata/api/v2/dataset/OSD-758/file/GLDS-664_rna_seq_VST_Counts_GLbulkRNAseq.csv/",
+      "restricted": false,
+      "visible": true,
+      "bytes": 18394654,
+      "sha256": "c3a4a16fe6de4bd0aed6580774a6d8302e8c25df8d8da8ea8dcad9f95c4646fc"
+    },
+    {
       "accession": "OSD-203",
       "kind": "sample metadata",
       "local_file": "OSD-203_sample_metadata.csv",
@@ -210,6 +258,30 @@
       "visible": true,
       "bytes": 5586,
       "sha256": "edfd5ae99a5f1502b327184f8f679fd99b5d6ad76f35185f3dd55fb976afd5c0"
+    },
+    {
+      "accession": "OSD-203",
+      "kind": "unnormalized counts - supplementary",
+      "category": "GeneLab Processed RNA-Seq Files",
+      "local_file": "GLDS-203_rna_seq_STAR_Unnormalized_Counts_GLbulkRNAseq.csv",
+      "source_url": "https://osdr.nasa.gov/geode-py/ws/studies/OSD-203/download?source=datamanager&file=GLDS-203_rna_seq_STAR_Unnormalized_Counts_GLbulkRNAseq.csv",
+      "api_record": "https://visualization.osdr.nasa.gov/biodata/api/v2/dataset/OSD-203/file/GLDS-203_rna_seq_STAR_Unnormalized_Counts_GLbulkRNAseq.csv/",
+      "restricted": false,
+      "visible": true,
+      "bytes": 9722066,
+      "sha256": "2baf01644eed7fec70458a83bfc2ed155feb1df549929f42f00a15b862dfa0db"
+    },
+    {
+      "accession": "OSD-203",
+      "kind": null,
+      "category": "GeneLab Processed RNA-Seq Files",
+      "local_file": "GLDS-203_rna_seq_VST_Counts_GLbulkRNAseq.csv",
+      "source_url": "https://osdr.nasa.gov/geode-py/ws/studies/OSD-203/download?source=datamanager&file=GLDS-203_rna_seq_VST_Counts_GLbulkRNAseq.csv",
+      "api_record": "https://visualization.osdr.nasa.gov/biodata/api/v2/dataset/OSD-203/file/GLDS-203_rna_seq_VST_Counts_GLbulkRNAseq.csv/",
+      "restricted": false,
+      "visible": true,
+      "bytes": 30030272,
+      "sha256": "9d091bff4958d9a1760f55c2dbcc7e30c4d82f09a6684fe3d6c0ad1744c5eeb2"
     }
   ]
 }

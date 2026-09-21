@@ -5,7 +5,9 @@
       "role": "transcriptomic discovery",
       "files": [
         "GLDS-255_rna_seq_differential_expression_GLbulkRNAseq.csv",
-        "GLDS-255_rna_seq_SampleTable_GLbulkRNAseq.csv"
+        "GLDS-255_rna_seq_SampleTable_GLbulkRNAseq.csv",
+        "GLDS-255_rna_seq_STAR_Unnormalized_Counts_GLbulkRNAseq.csv",
+        "GLDS-255_rna_seq_VST_Counts_GLbulkRNAseq.csv"
       ]
     },
     "OSD-557": {
@@ -29,7 +31,9 @@
       "files": [
         "GLDS-664_rna_seq_differential_expression_GLbulkRNAseq.csv",
         "GLDS-664_rna_seq_contrasts_GLbulkRNAseq.csv",
-        "GLDS-664_rna_seq_SampleTable_GLbulkRNAseq.csv"
+        "GLDS-664_rna_seq_SampleTable_GLbulkRNAseq.csv",
+        "GLDS-664_rna_seq_STAR_Unnormalized_Counts_GLbulkRNAseq.csv",
+        "GLDS-664_rna_seq_VST_Counts_GLbulkRNAseq.csv"
       ]
     },
     "OSD-203": {
@@ -37,7 +41,9 @@
       "files": [
         "GLDS-203_rna_seq_differential_expression_GLbulkRNAseq.csv",
         "GLDS-203_rna_seq_contrasts_GLbulkRNAseq.csv",
-        "GLDS-203_rna_seq_SampleTable_GLbulkRNAseq.csv"
+        "GLDS-203_rna_seq_SampleTable_GLbulkRNAseq.csv",
+        "GLDS-203_rna_seq_STAR_Unnormalized_Counts_GLbulkRNAseq.csv",
+        "GLDS-203_rna_seq_VST_Counts_GLbulkRNAseq.csv"
       ]
     }
   }

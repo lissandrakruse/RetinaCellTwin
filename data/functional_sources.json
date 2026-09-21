@@ -1,0 +1,18 @@
+{
+  "sources": [
+    {
+      "name": "Mouse Gene Ontology annotations",
+      "url": "https://current.geneontology.org/annotations/mgi.gaf.gz",
+      "local_file": "mgi.gaf.gz",
+      "expected_bytes": 14020707,
+      "expected_sha256": "9b7613f786f9f805531a8f6768f310220d28c82095f938e1212c86f39596ce30"
+    },
+    {
+      "name": "Gene Ontology basic ontology",
+      "url": "https://current.geneontology.org/ontology/go-basic.obo",
+      "local_file": "go-basic.obo",
+      "expected_bytes": 32227785,
+      "expected_sha256": "b08d45b268b8c24ccb2513dbbbc7d4df9f6521c099b413f79eb31e06e0fa3bcc"
+    }
+  ]
+}
