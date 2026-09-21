@@ -41,6 +41,20 @@ def download(session: requests.Session, url: str, destination: Path) -> tuple[in
     return size, digest.hexdigest()
 
 
+def checksum_existing(destination: Path, expected_size: int | None) -> tuple[int, str] | None:
+    """Reuse an intact local download while rebuilding provenance records."""
+    if not destination.is_file():
+        return None
+    size = destination.stat().st_size
+    if expected_size is not None and size != expected_size:
+        return None
+    digest = hashlib.sha256()
+    with destination.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return size, digest.hexdigest()
+
+
 def fetch_metadata(session: requests.Session, base: str, accession: str) -> tuple[str, bytes]:
     url = (
         f"{base}/query/metadata/?id.accession={accession}"
@@ -60,9 +74,10 @@ def main() -> None:
     base = manifest["api_base"].rstrip("/")
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     records: list[dict] = []
+    downloaded_data_files = 0
 
     with requests.Session() as session:
-        session.headers.update({"User-Agent": "RetinaCellTwin/0.1 (+open-science)"})
+        session.headers.update({"User-Agent": "RetinaCellTwin/0.3 (+open-science)"})
         for accession, dataset in manifest["datasets"].items():
             files_url = f"{base}/dataset/{accession}/files/"
             listing = get_json(session, files_url)[accession]["files"]
@@ -90,8 +105,14 @@ def main() -> None:
                 if metadata.get("restricted") is not False or metadata.get("visible") is not True:
                     raise PermissionError(f"Refusing non-public file: {accession}/{name}")
                 destination = DATA_DIR / name
-                size, sha256 = download(session, entry["URL"], destination)
                 expected_size = metadata.get("file_size")
+                expected_size = int(expected_size) if expected_size is not None else None
+                cached = checksum_existing(destination, expected_size)
+                if cached:
+                    size, sha256 = cached
+                else:
+                    size, sha256 = download(session, entry["URL"], destination)
+                    downloaded_data_files += 1
                 if expected_size is not None and size != int(expected_size):
                     raise IOError(
                         f"Size mismatch for {name}: downloaded {size}, expected {expected_size}"
@@ -118,11 +139,13 @@ def main() -> None:
         "files": records,
     }
     (DATA_DIR / "provenance.json").write_text(
-        json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8"
+        json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
     )
-    print(f"Fetched {len(records)} public records into {DATA_DIR}")
+    print(
+        f"Verified {len(records)} public records in {DATA_DIR}; "
+        f"downloaded {downloaded_data_files} data files"
+    )
 
 
 if __name__ == "__main__":
     main()
-

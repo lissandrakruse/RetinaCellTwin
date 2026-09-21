@@ -183,10 +183,19 @@ def main() -> None:
     imaging = analyze_imaging()
     payload = {
         "project": "RetinaCellTwin",
-        "version": "0.1.0-dev",
+        "version": "0.3.0",
         "evidence_layers": {
-            "observed": ["OSD-255", "OSD-557", "OSD-568"],
-            "derived": ["OSD-255 differential-expression summary", "prespecified imaging endpoint comparisons"],
+            "observed": ["OSD-203", "OSD-255", "OSD-557", "OSD-568", "OSD-758"],
+            "derived": [
+                "OSD-255 differential-expression summary",
+                "prespecified imaging endpoint comparisons",
+                "cross-mission gravity transfer audit",
+                "time-resolved ground-analogue audit",
+                "VST and STAR-count effect audits",
+                "GO Biological Process context",
+                "Mouse Retina Cell Atlas anchor context",
+                "unpaired cross-modal evidence matrix",
+            ],
             "hypothetical": [],
         },
         "transcriptomics": transcriptomics,
@@ -196,6 +205,8 @@ def main() -> None:
             "Right-retina transcriptomics and left-eye imaging are not treated as paired measurements.",
             "Imaging tests are exploratory and corrected across seven prespecified endpoints.",
             "Cross-modal concordance does not establish causality.",
+            "Canonical retinal cell-class anchors are contextual references, not cell-fraction estimates or cell-of-origin evidence.",
+            "Cross-modal convergence is study-level and does not imply sample pairing, mediation or causality.",
             "This release does not generate synthetic data or make clinical predictions.",
         ],
     }
