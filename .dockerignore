@@ -1,0 +1,7 @@
+.git
+.venv
+__pycache__
+*.pyc
+data/*.csv
+data/*.gz
+data/*.obo

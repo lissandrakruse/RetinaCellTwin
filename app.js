@@ -2,12 +2,17 @@ async function loadResults() {
   const loading = document.getElementById("loading");
   const metrics = document.getElementById("metrics");
   try {
-    const [summaryResponse, auditResponse] = await Promise.all([
+    const [summaryResponse, auditResponse, crossModalResponse] = await Promise.all([
       fetch("results/summary.json", { cache: "no-store" }),
-      fetch("results/gravity_hypothesis.json", { cache: "no-store" })
+      fetch("results/gravity_hypothesis.json", { cache: "no-store" }),
+      fetch("results/cross_modal_context.json", { cache: "no-store" })
     ]);
-    if (!summaryResponse.ok || !auditResponse.ok) throw new Error("One or more result files are unavailable");
-    const [result, audit] = await Promise.all([summaryResponse.json(), auditResponse.json()]);
+    if (!summaryResponse.ok || !auditResponse.ok || !crossModalResponse.ok) throw new Error("One or more result files are unavailable");
+    const [result, audit, crossModal] = await Promise.all([
+      summaryResponse.json(),
+      auditResponse.json(),
+      crossModalResponse.json()
+    ]);
     const tx = result.transcriptomics;
     const supportedImaging = result.imaging.filter(row => row.welch_fdr < 0.05).length;
     metrics.innerHTML = `
@@ -19,11 +24,33 @@ async function loadResults() {
       .map(item => `<li>${item}</li>`).join("");
     setupSolver(result.imaging);
     renderCrossMissionAudit(audit);
+    renderCrossModalContext(crossModal);
     loading.textContent = "Results loaded from the reproducible workflow.";
     metrics.hidden = false;
   } catch (error) {
     loading.textContent = "No derived results are loaded yet. Run the fetch and analysis commands; the interface will not substitute demonstration values.";
   }
+}
+
+function renderCrossModalContext(matrix) {
+  const labels = {
+    "study-level contextual convergence": "Observed contextual convergence",
+    "imaging-only FDR-supported evidence": "Imaging-only evidence",
+    "no cross-modal convergence claim": "Not supported across modalities"
+  };
+  const tones = {
+    "study-level contextual convergence": "context-supported",
+    "imaging-only FDR-supported evidence": "context-partial",
+    "no cross-modal convergence claim": "context-limited"
+  };
+  const grid = document.getElementById("cross-modal-grid");
+  grid.innerHTML = matrix.rows.map(row => `
+    <article class="evidence-domain ${tones[row.integration_classification]}">
+      <span class="domain-status">${labels[row.integration_classification]}</span>
+      <h3>${row.domain}</h3>
+      <p><strong>Imaging:</strong> ${row.imaging_detail}</p>
+      <p><strong>Transcript context:</strong> ${row.transcript_detail}</p>
+    </article>`).join("");
 }
 
 function renderCrossMissionAudit(audit) {

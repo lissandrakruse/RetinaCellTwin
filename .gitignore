@@ -3,5 +3,7 @@ __pycache__/
 *.pyc
 data/*.csv
 data/*.part
+data/*.gz
+data/*.obo
 !data/datasets.json
 .sites-runtime/

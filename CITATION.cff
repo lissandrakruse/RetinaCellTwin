@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use this research scaffold, please cite the software release."
 title: "RetinaCellTwin: an open NASA OSDR-grounded cross-mission retinal analysis framework"
 type: software
-version: 0.2.0-dev
+version: 0.3.0
 date-released: 2026-09-20
 authors:
   - family-names: Fuganti
