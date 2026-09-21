@@ -10,4 +10,4 @@ RUN python -m pip install --no-cache-dir --requirement requirements-lock.txt
 
 COPY . .
 
-CMD ["./run_verification.sh"]
+CMD ["bash", "run_verification.sh"]

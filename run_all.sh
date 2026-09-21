@@ -20,4 +20,4 @@ fi
 "$PYTHON_CMD" analysis/analyze_cell_context.py
 "$PYTHON_CMD" analysis/analyze_cross_modal_context.py
 "$PYTHON_CMD" analysis/make_figures.py
-./run_verification.sh
+bash run_verification.sh

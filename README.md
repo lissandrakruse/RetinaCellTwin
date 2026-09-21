@@ -51,13 +51,13 @@ python analysis/analyze_go_enrichment.py
 python analysis/analyze_cell_context.py
 python analysis/analyze_cross_modal_context.py
 python analysis/make_figures.py
-./run_verification.sh
+bash run_verification.sh
 python -m http.server 8000
 ```
 
 Open `http://localhost:8000` after the analysis finishes.
 
-For an exact rerun, install `requirements-lock.txt` and execute `./run_all.sh`. A
+For an exact rerun, install `requirements-lock.txt` and execute `bash run_all.sh`. A
 container definition and a continuous-integration release check are also included.
 
 To keep data elsewhere, set `RCT_DATA_DIR` and optionally `RCT_RESULTS_DIR`.
