@@ -1,0 +1,46 @@
+{
+  "project": "RetinaCellTwin",
+  "analysis": "Published retinal cell-class anchor audit in bulk RNA-seq",
+  "anchor_source": {
+    "citation": "Li et al. Comprehensive single-cell atlas of the mouse retina. iScience (2024)",
+    "doi": "10.1016/j.isci.2024.109916",
+    "evidence_location": "Figure 1E",
+    "atlas_scope": "more than 330,000 cells; 12 major classes; 138 cell types"
+  },
+  "summaries": [
+    {
+      "contrast": "osd255_flight_vs_ground",
+      "anchors_mapped": 12,
+      "anchors_with_reported_fdr": 11,
+      "anchors_fdr_below_0_05": 1,
+      "significant_anchors": [
+        {
+          "cell_class": "Cone photoreceptor",
+          "marker_symbol": "Arr3"
+        }
+      ]
+    },
+    {
+      "contrast": "osd758_microgravity_vs_ground",
+      "anchors_mapped": 12,
+      "anchors_with_reported_fdr": 12,
+      "anchors_fdr_below_0_05": 0,
+      "significant_anchors": []
+    },
+    {
+      "contrast": "osd758_inflight_1g_vs_ground",
+      "anchors_mapped": 12,
+      "anchors_with_reported_fdr": 12,
+      "anchors_fdr_below_0_05": 0,
+      "significant_anchors": []
+    },
+    {
+      "contrast": "osd203_7d_radiation_vs_control",
+      "anchors_mapped": 12,
+      "anchors_with_reported_fdr": 12,
+      "anchors_fdr_below_0_05": 0,
+      "significant_anchors": []
+    }
+  ],
+  "interpretation_boundary": "These single canonical anchors provide cell-class context only. Bulk RNA-seq cannot distinguish regulation within a cell class from changes in cellular composition, and one marker per class is not a deconvolution signature."
+}

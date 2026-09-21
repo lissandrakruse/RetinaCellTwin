@@ -1,0 +1,38 @@
+{
+  "project": "RetinaCellTwin",
+  "analysis": "Gene Ontology Biological Process over-representation",
+  "ontology_version": "releases/2026-07-26",
+  "gaf_version": " 2.2",
+  "annotation_policy": "MGI Biological Process annotations propagated through is_a and part_of ancestors; NOT annotations excluded",
+  "multiple_testing": "Benjamini-Hochberg within each prespecified analysis",
+  "analyses": [
+    {
+      "analysis": "OSD-255 discovery panel vs transcriptome",
+      "foreground_total_input": 336,
+      "universe_total_input": 17586,
+      "foreground_annotated": 312,
+      "annotated_universe": 15501,
+      "terms_tested": 1487,
+      "terms_fdr_below_0_05": 95
+    },
+    {
+      "analysis": "Seven-day radiation-concordant genes vs OSD-255 panel",
+      "foreground_total_input": 209,
+      "universe_total_input": 336,
+      "foreground_annotated": 194,
+      "annotated_universe": 312,
+      "terms_tested": 870,
+      "terms_fdr_below_0_05": 0
+    },
+    {
+      "analysis": "Nine radiation-compatible candidates vs OSD-255 panel",
+      "foreground_total_input": 8,
+      "universe_total_input": 336,
+      "foreground_annotated": 7,
+      "annotated_universe": 312,
+      "terms_tested": 104,
+      "terms_fdr_below_0_05": 0
+    }
+  ],
+  "interpretation": "OSD-255 enrichment is a reproducibility/context analysis because RR-9 pathway enrichment was previously published. Candidate-set analyses are exploratory and do not establish mechanism."
+}

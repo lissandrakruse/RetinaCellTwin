@@ -1,0 +1,58 @@
+{
+  "project": "RetinaCellTwin",
+  "analysis": "Descriptive unpaired cross-modal evidence matrix",
+  "domains_declared": [
+    "Photoreceptor integrity",
+    "Apoptosis",
+    "Oxidative stress",
+    "Vascular/barrier integrity"
+  ],
+  "multiple_testing": "No new cross-modal hypothesis test was performed. Imaging FDR values are the existing Benjamini-Hochberg results across seven prespecified endpoints.",
+  "rows": [
+    {
+      "domain": "Photoreceptor integrity",
+      "imaging_status": "FDR-supported",
+      "imaging_endpoints_n": 1,
+      "imaging_endpoints_fdr_below_0_05": 1,
+      "minimum_welch_fdr": 0.0241670625460938,
+      "imaging_detail": "PNA-positive cell density: difference=-327, Hedges g=-1.91, Welch FDR=0.0242",
+      "transcript_status": "FDR-supported context",
+      "transcript_detail": "Arr3 log2FC=-0.301, FDR=0.00048; GO response to light stimulus FDR=0.00248",
+      "integration_classification": "study-level contextual convergence"
+    },
+    {
+      "domain": "Apoptosis",
+      "imaging_status": "FDR-supported",
+      "imaging_endpoints_n": 1,
+      "imaging_endpoints_fdr_below_0_05": 1,
+      "minimum_welch_fdr": 0.0008100732186644,
+      "imaging_detail": "TUNEL density, total: difference=73.1, Hedges g=3.5, Welch FDR=0.00081",
+      "transcript_status": "not directly tested",
+      "transcript_detail": "no prespecified direct transcriptomic test",
+      "integration_classification": "imaging-only FDR-supported evidence"
+    },
+    {
+      "domain": "Oxidative stress",
+      "imaging_status": "not FDR-supported",
+      "imaging_endpoints_n": 2,
+      "imaging_endpoints_fdr_below_0_05": 0,
+      "minimum_welch_fdr": 0.0671024935807543,
+      "imaging_detail": "4-HNE-positive cell density, retina: difference=7.11, Hedges g=0.971, Welch FDR=0.118; 4-HNE mean intensity, photoreceptor layer: difference=7.58, Hedges g=1.33, Welch FDR=0.0671",
+      "transcript_status": "broad context only",
+      "transcript_detail": "The RR-9 panel is enriched for response to abiotic stimulus, which is not a specific oxidative-stress test.",
+      "integration_classification": "no cross-modal convergence claim"
+    },
+    {
+      "domain": "Vascular/barrier integrity",
+      "imaging_status": "not FDR-supported",
+      "imaging_endpoints_n": 3,
+      "imaging_endpoints_fdr_below_0_05": 0,
+      "minimum_welch_fdr": 0.0500667096047932,
+      "imaging_detail": "TUNEL density, endothelial cells: difference=18.5, Hedges g=1.28, Welch FDR=0.0671; PECAM mean signal: difference=14.1, Hedges g=1.5, Welch FDR=0.0501; ZO-1 mean signal: difference=-7.6, Hedges g=-0.886, Welch FDR=0.128",
+      "transcript_status": "not FDR-supported",
+      "transcript_detail": "Pecam1 log2FC=-0.0104, FDR=0.984",
+      "integration_classification": "no cross-modal convergence claim"
+    }
+  ],
+  "interpretation_boundary": "The RNA-seq and imaging data come from different accessions and opposite eyes. Convergence is study-level context, not sample pairing, mediation, mechanism or causality."
+}
