@@ -17,4 +17,4 @@ It should not claim ownership of the AWG project, reuse unpublished group materi
 
 ## Sensible first collaboration request
 
-Share the repository after the v0.2 workflow and frozen outputs are archived. Ask whether the cross-mission audit and its radiation-compatible candidate set could support one of the group's unmet validation needs, and invite technical critique before proposing shared authorship or integration.
+Share the repository after the v0.3 workflow and frozen outputs are archived. Ask whether the cross-mission audit and its radiation-compatible candidate set could support one of the group's unmet validation needs, and invite technical critique before proposing shared authorship or integration.

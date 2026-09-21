@@ -1,6 +1,6 @@
 # Scientific scope and claim boundaries
 
-## Question for v0.2
+## Question for the v0.3 Oxford-candidate workflow
 
 Which transcriptomic and image-derived retinal phenotypes differ between RR-9 spaceflight animals and matched ground controls, and which signals are sufficiently reproducible to justify prospective mechanistic work?
 
@@ -24,6 +24,10 @@ Which transcriptomic and image-derived retinal phenotypes differ between RR-9 sp
 - The OSD-255 FDR < 0.05 set (362 genes) is fixed before testing OSD-758 or OSD-203.
 - OSD-758 attenuation within that panel is compared with all non-panel genes rather than interpreted in isolation.
 - OSD-203 concordance is benchmarked against 10,000 equal-sized random panels from the common-gene universe with a fixed seed.
+- VST and independently normalized STAR-count effects are compared with NASA differential-expression effects across ten prespecified contrasts.
+- GO Biological Process context uses versioned public ontology and mouse annotations.
+- Twelve canonical major-class anchors from the Mouse Retina Cell Atlas are audited descriptively across four bulk contrasts; they are not used for deconvolution.
+- Four declared biological domains are synthesized in an unpaired evidence matrix using existing FDR results; no new cross-modal test or sample pairing is introduced.
 
 ### Hypothesis layer
 
@@ -41,7 +45,7 @@ The stable universal-gravity-signature hypothesis was not supported. A narrower 
 ## Important limitations
 
 1. Spaceflight combines altered gravity, radiation, launch/re-entry, habitat and operational exposures.
-2. Bulk RNA-seq cannot assign expression changes to retinal cell types without reference-based deconvolution or single-cell data.
+2. Bulk RNA-seq cannot assign expression changes to retinal cell types. The canonical-anchor audit does not estimate cell fractions or distinguish composition from cell-intrinsic regulation.
 3. The transcriptomic and imaging accessions do not justify sample-level cross-modal pairing.
 4. Small imaging cohorts limit power and effect-size precision.
 5. Mouse results do not directly establish human clinical risk.
@@ -51,9 +55,9 @@ The stable universal-gravity-signature hypothesis was not supported. A narrower 
 
 ## Prospective validation path
 
-- Freeze the v0.1 analysis and archive checksums.
-- Reprocess OSD-255 from raw counts with a second independent implementation.
-- Add retinal cell-type reference data with explicit species and platform harmonization.
+- Freeze the v0.3 analysis and archive checksums.
+- Reprocess OSD-255 with a locked DESeq2/edgeR inferential workflow or from FASTQ when resources permit.
+- Extend the contextual anchor audit to a validated mouse-retina deconvolution reference only if its assumptions and platform harmonization can be justified.
 - Evaluate robustness across control cohorts.
 - Prospectively test the nine seven-day radiation-compatible candidates without reselecting them.
 - Validate prioritized signals experimentally or in an independent mission.
