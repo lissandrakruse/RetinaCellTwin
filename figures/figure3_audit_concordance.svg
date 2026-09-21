@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1450" height="690" viewBox="0 0 1450 690">
+<title>Effect concordance with NASA differential-expression results</title>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="55.0" y="55.0" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" text-anchor="start" fill="#172033">Effect concordance with NASA differential-expression results</text>
+<text x="55.0" y="88.0" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" text-anchor="start" fill="#4b5563">Spearman rank correlation across ten prespecified contrasts</text>
+<line x1="105" y1="555.0" x2="1390" y2="555.0" stroke="#e2e6ea"/>
+<text x="87.0" y="560.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" text-anchor="end" fill="#172033">0.6</text>
+<line x1="105" y1="448.8" x2="1390" y2="448.8" stroke="#e2e6ea"/>
+<text x="87.0" y="453.8" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" text-anchor="end" fill="#172033">0.7</text>
+<line x1="105" y1="342.5" x2="1390" y2="342.5" stroke="#e2e6ea"/>
+<text x="87.0" y="347.5" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" text-anchor="end" fill="#172033">0.8</text>
+<line x1="105" y1="236.2" x2="1390" y2="236.2" stroke="#e2e6ea"/>
+<text x="87.0" y="241.2" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" text-anchor="end" fill="#172033">0.9</text>
+<line x1="105" y1="130.0" x2="1390" y2="130.0" stroke="#e2e6ea"/>
+<text x="87.0" y="135.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" text-anchor="end" fill="#172033">1.0</text>
+<circle cx="156.2" cy="275.3" r="8" fill="#3158a6"/>
+<circle cx="182.2" cy="343.1" r="8" fill="#d06b2d"/>
+<text x="169.2" y="590.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" text-anchor="middle" fill="#172033">255 Flight/Ground</text>
+<circle cx="284.8" cy="251.5" r="8" fill="#3158a6"/>
+<circle cx="310.8" cy="267.9" r="8" fill="#d06b2d"/>
+<text x="297.8" y="590.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" text-anchor="middle" fill="#172033">758 uG/Ground</text>
+<circle cx="413.2" cy="250.2" r="8" fill="#3158a6"/>
+<circle cx="439.2" cy="288.7" r="8" fill="#d06b2d"/>
+<text x="426.2" y="590.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" text-anchor="middle" fill="#172033">758 uG/Flight 1G</text>
+<circle cx="541.8" cy="249.5" r="8" fill="#3158a6"/>
+<circle cx="567.8" cy="327.7" r="8" fill="#d06b2d"/>
+<text x="554.8" y="590.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" text-anchor="middle" fill="#172033">758 Flight 1G/Ground</text>
+<circle cx="670.2" cy="284.6" r="8" fill="#3158a6"/>
+<circle cx="696.2" cy="264.8" r="8" fill="#d06b2d"/>
+<text x="683.2" y="590.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" text-anchor="middle" fill="#172033">203 7d Rad</text>
+<circle cx="798.8" cy="276.6" r="8" fill="#3158a6"/>
+<circle cx="824.8" cy="312.0" r="8" fill="#d06b2d"/>
+<text x="811.8" y="590.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" text-anchor="middle" fill="#172033">203 7d HLU</text>
+<circle cx="927.2" cy="284.4" r="8" fill="#3158a6"/>
+<circle cx="953.2" cy="289.5" r="8" fill="#d06b2d"/>
+<text x="940.2" y="590.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" text-anchor="middle" fill="#172033">203 1m Rad</text>
+<circle cx="1055.8" cy="274.0" r="8" fill="#3158a6"/>
+<circle cx="1081.8" cy="274.7" r="8" fill="#d06b2d"/>
+<text x="1068.8" y="590.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" text-anchor="middle" fill="#172033">203 1m HLU</text>
+<circle cx="1184.2" cy="266.8" r="8" fill="#3158a6"/>
+<circle cx="1210.2" cy="342.9" r="8" fill="#d06b2d"/>
+<text x="1197.2" y="590.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" text-anchor="middle" fill="#172033">203 4m Rad</text>
+<circle cx="1312.8" cy="260.7" r="8" fill="#3158a6"/>
+<circle cx="1338.8" cy="302.3" r="8" fill="#d06b2d"/>
+<text x="1325.8" y="590.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" text-anchor="middle" fill="#172033">203 4m HLU</text>
+<circle cx="520" cy="645" r="8" fill="#3158a6"/>
+<text x="538.0" y="650.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" text-anchor="start" fill="#172033">VST mean-difference audit</text>
+<circle cx="820" cy="645" r="8" fill="#d06b2d"/>
+<text x="838.0" y="650.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" text-anchor="start" fill="#172033">STAR-count effect audit</text>
+<text x="32.0" y="355.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="600" text-anchor="middle" fill="#172033">Spearman rho</text>
+</svg>

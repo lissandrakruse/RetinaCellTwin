@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1350" height="720" viewBox="0 0 1350 720">
+<title>Top GO Biological Process terms in the OSD-255 discovery panel</title>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="55.0" y="55.0" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" text-anchor="start" fill="#172033">Top GO Biological Process terms in the OSD-255 discovery panel</text>
+<text x="55.0" y="88.0" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" text-anchor="start" fill="#4b5563">Contextual reproduction analysis; terms ranked by −log10(FDR)</text>
+<text x="502.0" y="150.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="600" text-anchor="end" fill="#172033">response to abiotic stimulus</text>
+<rect x="520" y="130" width="543.3" height="30" rx="5" fill="#4067b1"/>
+<text x="1073.3" y="151.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" text-anchor="start" fill="#3158a6">4.41</text>
+<text x="502.0" y="202.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="600" text-anchor="end" fill="#172033">intracellular protein localization</text>
+<rect x="520" y="182" width="516.5" height="30" rx="5" fill="#4067b1"/>
+<text x="1046.5" y="203.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" text-anchor="start" fill="#3158a6">4.19</text>
+<text x="502.0" y="254.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="600" text-anchor="end" fill="#172033">macromolecule localization</text>
+<rect x="520" y="234" width="398.2" height="30" rx="5" fill="#4067b1"/>
+<text x="928.2" y="255.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" text-anchor="start" fill="#3158a6">3.23</text>
+<text x="502.0" y="306.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="600" text-anchor="end" fill="#172033">protein localization to cell periphery</text>
+<rect x="520" y="286" width="398.2" height="30" rx="5" fill="#4067b1"/>
+<text x="928.2" y="307.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" text-anchor="start" fill="#3158a6">3.23</text>
+<text x="502.0" y="358.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="600" text-anchor="end" fill="#172033">response to nutrient levels</text>
+<rect x="520" y="338" width="398.2" height="30" rx="5" fill="#4067b1"/>
+<text x="928.2" y="359.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" text-anchor="start" fill="#3158a6">3.23</text>
+<text x="502.0" y="410.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="600" text-anchor="end" fill="#172033">response to nitrogen compound</text>
+<rect x="520" y="390" width="335.3" height="30" rx="5" fill="#4067b1"/>
+<text x="865.3" y="411.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" text-anchor="start" fill="#3158a6">2.72</text>
+<text x="502.0" y="462.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="600" text-anchor="end" fill="#172033">response to light stimulus</text>
+<rect x="520" y="442" width="321.3" height="30" rx="5" fill="#4067b1"/>
+<text x="851.3" y="463.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" text-anchor="start" fill="#3158a6">2.60</text>
+<text x="502.0" y="514.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="600" text-anchor="end" fill="#172033">protein folding</text>
+<rect x="520" y="494" width="321.3" height="30" rx="5" fill="#4067b1"/>
+<text x="851.3" y="515.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" text-anchor="start" fill="#3158a6">2.60</text>
+<text x="502.0" y="566.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="600" text-anchor="end" fill="#172033">detection of light stimulus</text>
+<rect x="520" y="546" width="321.3" height="30" rx="5" fill="#4067b1"/>
+<text x="851.3" y="567.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" text-anchor="start" fill="#3158a6">2.60</text>
+<text x="502.0" y="618.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="600" text-anchor="end" fill="#172033">cellular response to metal ion</text>
+<rect x="520" y="598" width="321.3" height="30" rx="5" fill="#4067b1"/>
+<text x="851.3" y="619.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" text-anchor="start" fill="#3158a6">2.60</text>
+<text x="890.0" y="685.0" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="600" text-anchor="middle" fill="#172033">−log10(FDR)</text>
+<text x="55.0" y="655.0" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="600" text-anchor="start" fill="#a8324a">No GO term passed FDR &lt; 0.05 in the radiation-concordant or nine-candidate subset analyses.</text>
+</svg>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560">
+<title>Directional concordance across missions and times</title>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="55.0" y="55.0" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" text-anchor="start" fill="#172033">Directional concordance across missions and times</text>
+<text x="55.0" y="88.0" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" text-anchor="start" fill="#4b5563">The dashed 50% line represents chance-level direction agreement</text>
+<line x1="750.0" y1="120" x2="750.0" y2="470" stroke="#8a94a6" stroke-width="2" stroke-dasharray="7 7"/>
+<text x="362.0" y="168.0" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="600" text-anchor="end" fill="#172033">RR-9 vs OSD-758 uG</text>
+<rect x="380" y="145" width="347.5" height="34" rx="6" fill="#b54b5f"/>
+<text x="739.5" y="169.0" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" text-anchor="start" fill="#b54b5f">47.0%</text>
+<text x="362.0" y="253.0" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="600" text-anchor="end" fill="#172033">OSD-203 radiation · 7 day</text>
+<rect x="380" y="230" width="468.1" height="34" rx="6" fill="#2f6fba"/>
+<text x="860.1" y="254.0" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" text-anchor="start" fill="#2f6fba">63.3%</text>
+<text x="362.0" y="338.0" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="600" text-anchor="end" fill="#172033">OSD-203 radiation · 1 month</text>
+<rect x="380" y="315" width="390.4" height="34" rx="6" fill="#2f6fba"/>
+<text x="782.4" y="339.0" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" text-anchor="start" fill="#2f6fba">52.8%</text>
+<text x="362.0" y="423.0" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="600" text-anchor="end" fill="#172033">OSD-203 radiation · 4 month</text>
+<rect x="380" y="400" width="331.2" height="34" rx="6" fill="#b54b5f"/>
+<text x="723.2" y="424.0" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" text-anchor="start" fill="#b54b5f">44.8%</text>
+<line x1="380.0" y1="480" x2="380.0" y2="489" stroke="#172033"/>
+<text x="380.0" y="515.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#172033">0</text>
+<line x1="565.0" y1="480" x2="565.0" y2="489" stroke="#172033"/>
+<text x="565.0" y="515.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#172033">25</text>
+<line x1="750.0" y1="480" x2="750.0" y2="489" stroke="#172033"/>
+<text x="750.0" y="515.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#172033">50</text>
+<line x1="935.0" y1="480" x2="935.0" y2="489" stroke="#172033"/>
+<text x="935.0" y="515.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#172033">75</text>
+<line x1="1120.0" y1="480" x2="1120.0" y2="489" stroke="#172033"/>
+<text x="1120.0" y="515.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#172033">100</text>
+<text x="750.0" y="550.0" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="600" text-anchor="middle" fill="#172033">Genes with concordant effect direction (%)</text>
+</svg>
