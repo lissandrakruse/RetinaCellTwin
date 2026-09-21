@@ -6,7 +6,7 @@ RetinaCellTwin separates source retrieval, deterministic analysis and release ve
 python -m venv .venv
 source .venv/bin/activate
 python -m pip install --requirement requirements-lock.txt
-./run_all.sh
+bash run_all.sh
 ```
 
 The workflow retrieves the public OSDR inputs declared in `data/datasets.json`, checks OSDR visibility restrictions, and records URLs, sizes, retrieval times and SHA-256 digests in `data/provenance.json`. Gene Ontology inputs are frozen by both byte count and SHA-256 in `data/functional_sources.json`; the fetcher refuses silent source drift.
@@ -20,7 +20,7 @@ docker build -t retinacelltwin:0.3.0 .
 docker run --rm retinacelltwin:0.3.0
 ```
 
-The image runs release verification against the frozen repository outputs. To regenerate all source-derived outputs inside a container, mount a persistent data directory and invoke `./run_all.sh`; network access to NASA OSDR and the frozen GO URLs is required.
+The image runs release verification against the frozen repository outputs. To regenerate all source-derived outputs inside a container, mount a persistent data directory and invoke `bash run_all.sh`; network access to NASA OSDR and the frozen GO URLs is required.
 
 ## Reproducibility levels
 
