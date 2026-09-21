@@ -29,7 +29,7 @@ The applicable official requirements are the [Minimum Standards of Reporting Che
 
 ## Reproducibility package
 
-- [x] One-command workflow: `./run_all.sh`.
+- [x] One-command workflow: `bash run_all.sh`.
 - [x] Exact Python lock and Conda environment.
 - [x] Dockerfile and continuous-integration verification.
 - [x] Public input provenance, byte counts and SHA-256 checksums.
